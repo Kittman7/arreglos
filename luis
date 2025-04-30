@@ -1,0 +1,30 @@
+#Constante y Calcuradora de descuentos
+
+Descuento_estudiante = 0.15
+Descuento_cliente_frecuente = 0.10
+descuento = 0
+
+precio_original = float(input("¿cual es el precio original?: $ "))
+
+es_estudiante = input("La persona es estudiante (si/no?")
+es_cliente_frecuente = input("Es cliente frecuente?(si/No)")
+
+if es_estudiante:
+    descuento = Descuento_estudiante
+elif es_cliente_frecuente:
+    descuento = Descuento_cliente_frecuente
+
+    monto_Descuento = precio_original * descuento
+    precio_final =   precio_original - monto_Descuento
+
+
+
+#Cancion
+duracion_de_cancion = float(input("Cuanto dura la cancion"))
+genero = print(input("Que genero muscial escucha?"))
+año = print(input("Que año fue lanzada la cancion"))
+
+if duracion_de_cancion == "200" and genero == "rock" and año == "1999":
+    print("Entra en la playlist")
+elif duracion_de_cancion != "200" and genero != "rock" and año != "1999":
+    print("no entras en la playlist")
